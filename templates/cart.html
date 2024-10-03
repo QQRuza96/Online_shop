@@ -18,14 +18,11 @@
           </ul>
         </header>
     </div>
-
-
     <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal text-body-emphasis">Ваши товары</h1>
         </div>
     </header>
-
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -42,7 +39,6 @@
                         </div>
                     </div>
                 </div>
-                
               </div>
             </div> 
             {% endfor %}
@@ -53,11 +49,9 @@
             {% endif %}
         </div>
     </div>
-
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h5 class="display-6 fw-normal text-body-secondary"> Итого: {{ total_total }}</h5>
     </div>
-
     <header>
         <form class="pricing-header p-3 pb-md-4 mx-auto" action="{% url 'cart_page' %}" method="get">
             <button class=" margin-lef:10px display-6 fw-normal text-body-emphasis" value='resets' name="action">Очистить корзину</button>
